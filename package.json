@@ -14,7 +14,7 @@
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* docs/fonts",
     "imagemin": "imagemin img/* -o docs/img",
     "usemin": "usemin contactus.html -d docs --htmlmin -o docs/contactus.html && usemin aboutus.html -d docs --htmlmin -o docs/aboutus.html && usemin index.html -d docs --htmlmin -o docs/index.html",
-    "build": "npm run clean && npm run copyfonts && npm run usemin"
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
   "author": "",
   "license": "ISC",
